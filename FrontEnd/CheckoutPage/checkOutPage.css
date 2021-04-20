@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: small;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  margin: 0;
+}
+.one:hover {
+  background-color: white;
+}
+.addressbox {
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #d9dedb;
+  padding: 3px;
+  margin: 1rem;
+  border-radius: 7px;
+}
+.addressline {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+.comment {
+  margin: 1rem;
+  border: 2px solid #d9dedb;
+  height: 100px;
+}
+h5 {
+  margin-left: 1rem;
+}
+.image {
+  margin-left: 1rem;
+}
+
+img {
+  width: 100%;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+.imagebox {
+  justify-content: space-between;
+}
+#po {
+  align-items: flex-start;
+  margin-left: 4%;
+}
+.line {
+  box-shadow: 1px 1px 10px #d9dedb;
+  border: 2px solid #d9dedb;
+  height: 400px;
+}
+.removesec {
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+.applycoupon {
+  justify-content: flex-start;
+  align-items: center;
+}
+.price {
+  margin: 0;
+  padding: 0 5px;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .price {
+    padding: 0 2rem;
+  }
+  .applycoupon {
+    justify-content: center;
+  }
+  .addressline {
+    margin: 0;
+  }
+  .removesec {
+    justify-content: space-around;
+  }
+  .line {
+    border: 2px solid #d9dedb;
+    height: 1px;
+    width: 80%;
+    margin: 1.5rem auto;
+  }
+  .image {
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+  .adbox {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem;
+  }
+  .adbox a {
+    margin: 0.5rem;
+    margin-left: 0;
+  }
+  .imagebox {
+    justify-content: space-around;
+  }
+  .comment {
+    margin: 5px;
+  }
+  .addressbox {
+    justify-content: space-around;
+    margin: 5px auto;
+  }
+  #po {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .images {
+    justify-content: space-evenly;
+  }
+  .applycoupon {
+    justify-content: center;
+  }
+  .removesec {
+    justify-content: space-around;
+  }
+  .addressline {
+    margin: 0;
+  }
+  .line {
+    border: 2px solid #d9dedb;
+    height: 1px;
+    width: 80%;
+    margin: 1.5rem auto;
+  }
+  .image {
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+  .imagebox {
+    justify-content: space-around;
+    font-size: small;
+  }
+  .imagebox h5 {
+    font-size: small;
+  }
+  .adbox {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2rem;
+  }
+  .addressbox {
+    justify-content: space-around;
+    margin: 0.5rem 0;
+  }
+  .comment {
+    margin: 0.5rem 0;
+  }
+  #po {
+    margin: 0;
+  }
+  .adbox a {
+    margin: 0.5rem;
+    margin-left: 0;
+  }
+}
+
+/*modal css*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #myForm1 {
+    font-size: smaller;
+  }
+  #myForm2 {
+    font-size: smaller;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-content {
+    width: 80%;
+  }
+}

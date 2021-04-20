@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c98256b770.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./checkOutPage.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class='container-fluid'>
+        <div class="row" style='height: 800px;'>
+            <div class="col-lg-7">
+                <div class="row addressbox adbox" >
+                    <div class="row addressline" style="margin:0.20rem;" >
+                        <p style="font-weight: bold; margin:3px 0">Delivery to XYZ, PINCODE</p>
+                        <p style="color: #babcbf;">ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER</p>
+                    </div>
+                    
+                        <a style="color:#dcacec; font-size: small; border: 1px solid #dcacec;"class="btn btn-outline btn-sm one" id="myBtn">CHANGE ADDRESS</a>
+                        <div class="modal" id="myModal">
+                              <div class="modal-content">
+                                  
+                                    <p style="color:#dcacec; font-size: large; font-weight: bold;">Change Delivery Address:<span id="c1" class="close">&times;</span></p>
+                                    <hr style="border: 1px solid #dcacec;;width: 100%; margin:7px auto;">
+                                   
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="ENTER PINCODE">
+                                    <span class="input-group-btn">
+                                      <button class="btn btn" style="background-color:#dcacec ; color: white;" type="submit">
+                                          Check
+                                      </button>
+                                    </span>
+                                  </div>
+                                
+                                <form style="margin-top: 1rem; " id="myForm1">
+                                
+                                  <div class="row" style="margin:0; justify-content: baseline; align-items: baseline;"><input class="col-1"  type="radio" id="ad1" name="address" value="ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME,COUNTRY PHONE NUMBER">
+                                    <label class="col-11" style="padding: 0;" for="male">ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER</label>
+                                 </div>
+
+                                    <div class="row" style="margin:0; justify-content: baseline; align-items: baseline;"><input class="col-1"  type="radio" id="ad1" name="address" value="ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME,COUNTRY PHONE NUMBER">
+                                            <label class="col-11" style="padding: 0;" for="male">ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER</label>
+                                    </div>
+                                    <div class="row" style="margin:0; justify-content: baseline; align-items: baseline;"><input class="col-1"  type="radio" id="ad1" name="address" value="ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME,COUNTRY PHONE NUMBER">
+                                            <label class="col-11" style="padding: 0;" for="male">ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER</label>
+                                    </div>
+                                </form>  
+                                <hr style="border: 1px solid #dcacec;;width: 100%; margin:7px auto;">
+                                <div class="btn btn-sm" style="background-color: #dcacec ; color: white; margin:7px auto;" id="addbutton">Add New Address</div>
+
+                          
+                            </div>
+                        </div>
+
+                        <div class="modal" id="myModal2">
+                            <div class="modal-content">
+                                
+                                <p style="color:#dcacec; font-size: large; font-weight: bold;">Add New Address:<span id="c2" class="close">&times;</span></p>
+                                  <hr style="border: 1px solid #dcacec;;width: 100%; margin:7px auto;">
+
+                                  <form style="margin-top: 1rem; " id="myForm1">
+                                    <div class="form-group row" style="color:#dcacec;">
+                                        <label for="building" class="col-sm-2 col-form-label" >FLOOR NO, BUILDING</label>
+                                        <div class="col-sm-10"> 
+                                            <textarea class="form-control" id="building" rows="2" placeholder="ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER"></textarea>
+                                        </div>
+                                      </div>
+                                    <div class="form-group row" style="color:#dcacec">
+                                        <label for="building" class="col-sm-2 col-form-label" >LANE 2</label>
+                                        <div class="col-sm-10">
+                                            <textarea class="form-control" id="building" rows="2" placeholder="ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" style="color:#dcacec; ">
+                                        <label for="building" class="col-sm-2 col-form-label" >CITY, DISTRICT</label>
+                                        <div class="col-sm-10">
+                                            <textarea class="form-control" id="building" rows="2" placeholder="ABC NAME, CITY NAME, FLOOR NUMBER, STATE NAME, COUNTRY, PHONE NUMBER"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" style="color:#dcacec">
+                                        <label for="state" class="col-sm-2 col-form-label" >STATE</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="state" placeholder="UTTAR PRADESH">
+                                        </div>
+
+                                        <label for="pincode" class="col-sm-2 col-form-label" >PINCODE</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" id="pincode" placeholder="110067">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" style="color:#dcacec;">
+                                        <label for="phone" class="col-sm-2 col-form-label" >PHONE NUMBER</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="phone" placeholder="9834568927">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <a class="btn col-10" id="submitbutton" type="submit" style="background-color:#dcacec; color: white; margin:2px auto;">Save Address</a>
+                                    </div>
+
+                                  </form>
+                                 
+                            
+
+                        
+                          </div>
+                      </div>
+                  
+                    
+
+                          
+               
+                   
+                </div>
+
+                <div class="row addressbox" 
+                style="flex-direction: column; 
+                justify-content: flex-start; 
+                align-items: flex-start; padding-left: 2rem;">
+                    <h5 style="margin:0">AVAILABLE OFFERS</h5>
+                    <p style="margin:0.5rem 0;">10% discounts.......</p>
+                    <a style="color:#dcacec; text-decoration-line: none;" href="#">Show More</a>
+                </div>
+
+                <div class="row col-lg-10 addressbox " style="justify-content: flex-start; align-items: flex-start; ">
+                    <img class="col-lg-4" style="margin-top: 0.25rem;" src="./11.jpg">
+                    
+                    <div class="row col-lg-8 imagebox" >
+                        <div class="row" style='flex-direction: column; margin: 0;'>
+                            <h5 style="margin:0">LABEL BY DISHA</h5>
+                            <p  style="margin:0"> LABEL BY DISHA</p>
+                            <div class="row" style="justify-content: space-between; margin: 0.15rem 0;">
+                                <div >
+                                    <select class="custom-select" id="size">
+                                        <option selected>Size</option>
+                                        <option value="S">S</option>
+                                        <option value="L">L</option>
+                                        <option value="M">M</option>
+                                      </select>
+                                </div>
+                               
+                                <div >
+                                    <select class="custom-select" id="qty">
+                                        <option selected>Qty</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <p style="margin-top: 1rem;">Delivered By 14 August</p>
+                           
+                            
+                        </div>
+                        <div class="row col-3" style="flex-direction: column; ">
+                            <h5>2999</h5>
+                           <p style="color: #babcbf;"><spam style="text-decoration-line: line-through; color: #babcbf;">6000</spam> 30%</p>
+                        </div>
+                    </div>
+                    <hr class="col-lg-8" style="border: 1px solid  #d9dedb; width:100%; margin:0.5rem auto;">
+                    <div  class="row col-lg-8 removesec" >
+                        <a class="btn btn-sm"href='#'>Remove</a>
+                        <div style="height: 20px; border: 1px solid  #d9dedb ; width: 1px;"></div>
+                        <a class="btn btn-sm"href='#'>Wishlist</a>
+                    </div>
+                    
+                   
+                </div>
+                
+                <div class="row col-lg-10 addressbox" style="justify-content: flex-start;">
+                    <i style="margin:5px;"class="far fa-bookmark"></i> ADD MORE FROM WISHLIST
+               </div>
+               <h5 style="margin:1rem;">YOU MAY ALSO LIKE </h5>
+               <div class='row images'>
+                    <div class="col-5 col-md-4 col-lg-2 image">
+                        <img src="./23.jpg">
+                    
+                        <div class="i11">
+                            <h5 style="margin:0">BRAND</h5>
+                            <p style="color: #babcbf;font-weight: bold;">Price  <spam style="text-decoration-line: line-through;">Price</spam></p>
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-4 col-lg-2 image">
+                        <img src="./23.jpg">
+                    
+                        <div class="i11">
+                            <h5 style="margin:0">BRAND</h5>
+                            <p style="color: #babcbf;font-weight: bold;">Price  <spam style="text-decoration-line: line-through;">Price</spam></p>
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-4 col-lg-2 image">
+                        <img src="./23.jpg">
+                    
+                        <div class="i11">
+                            <h5 style="margin:0">BRAND</h5>
+                            <p style="color: #babcbf;font-weight: bold;">Price  <spam style="text-decoration-line: line-through;">Price</spam></p>
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-4 col-lg-2 image">
+                        <img src="./23.jpg">
+                    
+                        <div class="i11">
+                            <h5 style="margin:0">BRAND</h5>
+                            <p style="color: #babcbf;font-weight: bold;">Price  <spam style="text-decoration-line: line-through;">Price</spam></p>
+                        </div>
+                    </div>
+                    <div class="col-5 col-md-4 col-lg-2 image">
+                        <img src="./23.jpg">
+                    
+                        <div class="i11">
+                            <h5 style="margin:0">BRAND</h5>
+                            <p style="color: #babcbf;font-weight: bold;">Price  <spam style="text-decoration-line: line-through;">Price</spam></p>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="line"></div>
+            <div class='col-lg-4'>
+                
+                    <form  style="margin-top: 1rem;">
+                        <div class="form-row col-lg-12 applycoupon"> 
+                          <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInput">Name</label>
+                            <input style="height: 30px;"type="text" class="form-control" id="inlineFormInput" placeholder="APPLY COUPON">
+                          </div>
+                          
+                          <div class="col-auto">
+                            <a style="color:#dcacec; font-size: small; border: 1px solid #dcacec;"class="btn btn-outline btn-sm one">Apply</a>
+                          </div>
+                        </div>
+                      </form>
+                    
+               
+
+               <div class="col-lg-8 addressbox">
+                <h6 class="price">PRICE DETAILS(N ITEMS)</h6>
+                <div class="row price" >
+                        <p style="color: #babcbf;">TOTAL MRP</p>
+                        <p style="font-weight: bold;">2999</p>
+                </div>
+                <div class="row price" >
+                    <p style="color: #babcbf;">ORIGINAL MRP</p>
+                    <p style="font-weight: bold;">6000</p>
+                </div>
+                <div class="row price" >
+                    <p style="color: #babcbf;">COUPON DISCOUNT</p>
+                    <p style="font-weight: bold;">30%OFF</p>
+                </div>
+                <div class="row price" >
+                    <p style="color: #babcbf;">SHIPPING CHARGE</p>
+                    <p style="font-weight: bold; color:#dcacec ;">FREE</p>
+                 </div>
+                 <hr  style="border: 1px solid grey; width:90%; margin:0.5rem auto;">
+                 <div class="row price">
+                    <p style="font-weight: bold;">TOTAL AMOUNT</p>
+                    <p style="font-weight: bold;">2999</p>
+                 </div>
+                 
+               </div>
+                <a id="po"  style="background-color: #daa0f2;"class=" col-lg-8 btn btn-sm">PLACE ORDER</a>
+               <h5 style="margin:1rem;padding-left: 1rem;">WE ACCEPT:</h5>
+               <div class="row col-lg-9" style="margin:0;justify-content: space-around;">
+                <i class="fab fa-paypal fa-2x"></i>
+                    <div class="row" style="flex-direction: column; align-items: center;">
+                        <i class="fab fa-cc-visa fa-2x"></i>
+                        <i class="fab fa-cc-mastercard fa-2x"></i>
+                    </div>
+                <i class="fab fa-google fa-2x"></i>
+                </div>
+                <hr style="width:80%;border:2px solid #d9dedb; margin-left: 1rem auto;">
+                <h5 style="margin-bottom: 1rem;">ADDITIONAL COMMENT</h5> 
+                <textarea class="col-lg-10 form-control" id="building" rows="4"></textarea>
+                
+                  
+               
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="./checkOutPage.js"></script>
+    
+</body>
+</html>
