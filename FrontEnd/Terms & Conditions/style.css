@@ -1,0 +1,380 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* background: radial-gradient(rgb(229, 209, 235), rgb(245, 199, 241)); */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Playfair Display', serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+body{ 
+    overflow-x: hidden;
+}
+
+
+.first{
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.first h1{
+    font-size: 2rem;
+    margin-left: 140px;
+}
+
+.second {
+    font-family: 'Playfair Display', serif;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.sec-1{
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+ 
+}
+
+.sec-2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+   
+}
+
+.third{
+    background-image: url("images/real.png");
+    /* width: 97vw; */
+    min-height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 50px;
+}
+
+.fourth p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+   
+}
+
+
+@media (min-width:1305px) {
+    .main-div{
+        padding-left: 100px ;
+        padding-right:100px;
+    }
+    .first{
+        margin-bottom: 20px;
+    }
+    .first h1{
+        font-size: 2rem;
+        margin-left: 0px;
+       margin-top: 40px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .third{
+       margin-left: -100px;
+       margin-right: -100px;
+       width: 100vw;
+       min-height:55vh;
+      
+    }
+
+    .sec-1,.sec-2{
+        padding-right: 130px;
+    }
+
+    .fourth p{
+        padding-right: 300px;
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1305px)  {
+
+    .main-div{
+        padding-left: 60px ;
+        padding-right:60px;
+    }
+    .first{
+        margin-bottom: 20px;
+    }
+    .first h1{
+        font-size: 2rem;
+        margin-left: 0px;
+       margin-top: 40px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .third{
+       margin-left: -60px;
+       margin-right: -60px;
+      
+    }
+
+    .sec-1,.sec-2, .fourth p{
+        padding-right: 30px;
+    }
+
+}
+
+
+
+
+
+@media(max-width:768px)
+{
+    .main-div{
+        padding-left: 50px ;
+        padding-right:50px;
+    }
+    .first{
+        margin-bottom: 20px;
+    }
+
+    .first h1{
+        font-size: 2rem;
+        margin-left: 0px;
+       margin-top: 40px;
+        text-align: left;
+    }
+
+    .second{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .third{
+        margin-left: -50px;
+        margin-right: -50px;
+        min-height: 45vh;
+        margin-bottom: 40px;
+    }
+
+    .first h1{
+        font-size: 1.5rem;
+    }
+    .sec-1,.sec-2, .fourth p{
+        font-size:0.97rem;
+    }
+
+    .four-1{
+        
+    }
+}
+
+
+
+@media(max-width:480px)
+{
+    .main-div{
+        padding-left: 20px ;
+        padding-right:20px;
+        text-align: left;
+    }
+    .first h1{
+        font-size: 1.1rem;
+        margin-top: 40px;
+    }
+    .sec-1,.sec-2{
+        font-size: 0.85rem;
+    }
+
+    .fourth p{
+        font-size: 0.85rem;
+    }
+
+    .second{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .first h1{
+        text-align: left;
+    }
+
+    .third{
+        /* width: 98vw; */
+     
+        margin-bottom: 10px;
+        min-height: 20vh;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px)  {
+    .third{
+    
+        margin-bottom: 30px;
+        min-height:55vh;
+        background-size: cover;
+        background-size: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 0900px) and (max-width: 1200px)  {
+    .third{
+    
+        margin-bottom: 30px;
+        min-height:55vh;
+        background-size: cover;
+        background-size: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 770px) and (max-width: 900px)  {
+    .third{
+    
+        margin-bottom: 30px;
+        min-height: 45vh;
+        background-size: cover;
+        background-size: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 580px) and (max-width: 769px)  {
+    .third{
+    
+        margin-bottom: 30px;
+        min-height: 35vh;
+        background-size: cover;
+        background-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 580px)  {
+    .third{
+    
+        margin-bottom: 10px;
+        min-height: 30vh;
+    }
+}
+@media only screen and (min-width: 415px) and (max-width: 480px)  {
+    .third{
+    
+        margin-bottom: 10px;
+        min-height: 30vh;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 450px)  {
+    .third{
+    
+        margin-bottom: 10px;
+        min-height: 20vh;
+    }
+}
+
+
+
+
+/* -------------media query for ipad and ipad pro---------------------- */
+
+
+/* --------------ipad pro--------------- */
+/* Landscape*/
+/* 
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) 
+ {
+    .third{
+        margin-top: -120px;
+        margin-bottom: -70px;
+    }
+ } */
+
+/* Portrait*/
+/* @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+    .third{
+        
+        margin-bottom: -200px!important;
+        margin-top: -280px!important;
+    }
+} */
+
+
+/* ----------------- ipad--------------------
+
+/* Landscape*/
+
+/* @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) 
+ {
+    .third{
+        margin-top: -120px;
+        margin-bottom: -40px;
+    }
+ } */
+
+/* Portrait*/
+/* @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  
+/* }  */
+
+/* ------------------------ipad pro-------------------- */
+ @media only screen   
+and (orientation : portrait)   
+and (-webkit-min-device-pixel-ratio: 1)   
+and (min-device-width : 1024px)   
+and (max-device-width : 1366px)  
+{ 
+    .third{
+        
+        margin-bottom: -140px;
+        margin-top: -260px;
+    }
+}   
+/*  
+@media only screen   
+and (orientation : landscape)   
+and (-webkit-min-device-pixel-ratio: 1)   
+and (min-device-width : 1024px)   
+and (max-device-width : 1366px)  
+{ 
+    .third{
+        margin-top: -140px;
+        margin-bottom: -80px;
+        
+    }
+}    */
+
+/* ------------------------ipad -------------------- */
+ /* @media only screen   
+and (orientation : portrait)   
+and (-webkit-min-device-pixel-ratio: 1)   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{ 
+    .third{
+        margin-top: -70px;
+        margin-bottom: -40px;
+        
+    }
+}   /* */
+
+/* @media only screen   
+and (orientation : landscape)   
+and (-webkit-min-device-pixel-ratio: 1)   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{ 
+    .third{
+        margin-top: -100px;
+        margin-bottom: -40px;
+        
+    }
+}    */ 
