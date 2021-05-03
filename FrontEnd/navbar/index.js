@@ -206,3 +206,14 @@
  }
 
  
+
+
+
+
+
+
+//  ----------------extra--------------
+// var modal3Real = document.querySelector(".modal3");
+// var search = document.querySelector(".fa-search");
+// search.addEventListener("click",function(){
+//     modal3Real.style.display="block";
